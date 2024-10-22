@@ -1,0 +1,61 @@
+.section-services {
+    padding: 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.grid {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(4, 1fr); /* Default to 4 columns */
+}
+
+/* Media query for large screens (max-width 1200px) */
+@media (max-width: 1200px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr); /* Change to 3 columns */
+    }
+}
+
+/* Media query for medium screens (max-width 900px) */
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr); /* Change to 2 columns */
+    }
+}
+
+/* Media query for small screens (max-width 600px) */
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr; /* Change to single column */
+    }
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Scale the card on hover */
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+.card-details {
+    padding: 1rem;
+}
+
+.grid-two-cols {
+    display: grid;
+    grid-template-columns: 1fr;
+}
